@@ -1,4 +1,4 @@
-# antaresr
+# antares
 
 Dark colorscheme for vim-editor
 
