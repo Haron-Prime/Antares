@@ -286,7 +286,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("Conditional", s:blue, "", "")
   call <SID>X("Repeat", s:yellow, "", "")
   call <SID>X("Structure", s:yellow, "", "")
-  "call <SID>X("Function", s:blue,"","")
+  call <SID>X("Function", s:blue,"","")
   call <SID>X("Constant", s:orange, "", "")
   call <SID>X("String", s:green, "", "")
   call <SID>X("Special", s:blue, "", "")
@@ -316,7 +316,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("phpKeyword", s:yellow, "", "")
   call <SID>X("phpIdentifier", s:blue, "", "")
   call <SID>X("phpType", s:aqua, "", "")
-  "call <SID>X("phpOperator", s:yellow,"","")
+  call <SID>X("phpOperator", s:yellow,"","")
   call <SID>X("phpRepeat", s:yellow, "", "")
   call <SID>X("phpConditional", s:blue, "", "")
   call <SID>X("phpStatement", s:yellow, "", "")
@@ -366,10 +366,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("jsKeyword", s:blue, "", "")
 
   " HTML Highlighting
-  "call <SID>X("htmlTag", s:red,"","")
-  "call <SID>X("htmlTagName", s:red,"","")
-  "call <SID>X("htmlArg", s:red,"","")
-  "call <SID>X("htmlScriptTag", s:red,"","")
+  call <SID>X("htmlTag", s:red,"","")
+  call <SID>X("htmlTagName", s:red,"","")
+  call <SID>X("htmlArg", s:red,"","")
+  call <SID>X("htmlScriptTag", s:red,"","")
 
   " Diff Highlighting
   call <SID>X("diffAdded", s:green, "", "")
