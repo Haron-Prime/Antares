@@ -241,7 +241,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     endif
   endfun
 
-  " Vim Highlighting
+  "UI Highlighting
   call <SID>X("Normal", s:foreground, s:background, "none")
   call <SID>X("LineNr", s:linenr_fg, s:linenr_bg, "")
   call <SID>X("NonText", s:non_text, "", "")
@@ -262,9 +262,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("MatchParen", "", s:selection, "")
   call <SID>X("Folded", s:comment, s:background, "")
   call <SID>X("FoldColumn", "", s:background, "")
-  "call <SID>X("Cursor", "NONE", s:non_text, "none")
+
   hi CursorLine guibg=#202020
   hi Cursor guifg=NONE guibg=#555555 gui=none
+
   if version >= 700
     call <SID>X("CursorLine", "", s:activeline, "none")
     call <SID>X("CursorColumn", "", s:line, "none")
@@ -277,7 +278,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   end
 
   " Standard Highlighting
-  " TODO tes
   call <SID>X("Comment", s:comment, "", "")
   call <SID>X("Todo", s:red, s:background, "bold")
   call <SID>X("Title", s:comment, "", "")
