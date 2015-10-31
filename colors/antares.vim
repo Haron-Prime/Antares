@@ -13,6 +13,8 @@ let s:comment          = "757575"
 let s:red              = "DE575C"
 let s:orange           = "ED934C"
 let s:yellow           = "EBE971"
+let s:lyme             = "afdf00"
+let s:peach            = "df875f"
 let s:green            = "00b853"
 let s:aqua             = "4ae5e8"
 let s:blue             = "7fc6f0"
@@ -399,6 +401,22 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("htmlTagName", s:red,"","")
   call <SID>X("htmlArg", s:red,"","")
   call <SID>X("htmlScriptTag", s:red,"","")
+
+  " Shell/Bash highlighting
+  call <SID>X("bashStatement", s:lightblue, "", "bold")
+  call <SID>X("shDerefVar", s:aqua, "", "bold")
+  call <SID>X("shDerefSimple", s:aqua, "", "")
+  call <SID>X("shFunction", s:orange, "", "bold")
+  call <SID>X("shStatement", s:lightblue, "", "")
+  call <SID>X("shOperator", s:purple, "", "")
+  call <SID>X("shConditional", s:orange, "", "")
+  call <SID>X("shLoop", s:purple, "", "bold")
+  call <SID>X("shQuote", s:olive, "", "")
+  call <SID>X("shCaseEsac", s:aqua, "", "bold")
+  call <SID>X("shSnglCase", s:purple, "", "none")
+  call <SID>X("shFunctionOne", s:peach, "", "")
+  call <SID>X("shCase", s:peach, "", "")
+  call <SID>X("shSetList", s:peach, "", "")
 
   " Diff Highlighting
   let s:diffbackground = "494e56"
