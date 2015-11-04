@@ -326,7 +326,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
   " Vim Highlighting
   call <SID>X("vimCommand", s:red, "", "none")
-  call <SID>X("vimVar", s:peach, "", "")
+  call <SID>X("vimVar", s:blue, "", "")
   call <SID>X("vimFuncKey", s:lyme, "", "")
   call <SID>X("vimFunction", s:blue, "", "bold")
   call <SID>X("vimNotFunc", s:lyme, "", "")
@@ -409,6 +409,42 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("lexMorePat", s:olive, "", "bold")
   call <SID>X("lexOptions", s:olive, "", "bold")
   call <SID>X("lexPatString", s:olive, "", "")
+
+  " Yacc highlighting
+  call <SID>X("yaccNonterminal", s:peach, "", "")
+  call <SID>X("yaccDelim", s:orange, "", "")
+  call <SID>X("yaccInitKey", s:aqua, "", "")
+  call <SID>X("yaccInit", s:peach, "", "")
+  call <SID>X("yaccKey", s:purple, "", "")
+  call <SID>X("yaccVar", s:aqua, "", "")
+
+  " NASM highlighting
+  call <SID>X("nasmStdInstruction", s:peach, "", "")
+  call <SID>X("nasmGen08Register", s:aqua, "", "")
+  call <SID>X("nasmGen16Register", s:aqua, "", "")
+  call <SID>X("nasmGen32Register", s:aqua, "", "")
+  call <SID>X("nasmGen64Register", s:aqua, "", "")
+  call <SID>X("nasmHexNumber", s:purple, "", "")
+  call <SID>X("nasmStorage", s:aqua, "", "bold")
+  call <SID>X("nasmLabel", s:lyme, "", "")
+  call <SID>X("nasmDirective", s:blue, "", "bold")
+  call <SID>X("nasmLocalLabel", s:orange, "", "")
+
+  " GAS highlighting
+  call <SID>X("gasSymbol", s:lyme, "", "")
+  call <SID>X("gasDirective", s:blue, "", "bold")
+  call <SID>X("gasOpcode_386_Base", s:peach, "", "")
+  call <SID>X("gasDecimalNumber", s:purple, "", "")
+  call <SID>X("gasSymbolRef", s:lyme, "", "")
+  call <SID>X("gasRegisterX86", s:blue, "", "")
+  call <SID>X("gasOpcode_P6_Base", s:peach, "", "")
+  call <SID>X("gasDirectiveStore", s:foreground, "", "bold")
+
+  " MIPS highlighting
+  call <SID>X("mipsInstruction", s:lyme, "", "")
+  call <SID>X("mipsRegister", s:peach, "", "")
+  call <SID>X("mipsLabel", s:aqua, "", "bold")
+  call <SID>X("mipsDirective", s:purple, "", "bold")
 
   " PHP Highlighting
   call <SID>X("phpVarSelector", s:yellow, "", "")
