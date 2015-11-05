@@ -1,6 +1,6 @@
 # Antares
 
-Dark colorscheme for vim-editor
+Dark colorscheme for vim/neovim
 
 #### Some screenshots (vim, zsh, haskell)
 
