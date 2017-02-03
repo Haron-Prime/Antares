@@ -9,7 +9,7 @@ Dark colorscheme for vim/neovim
 ![](/screenshots/3-haskell.png?raw=true)
 
 
-#### License -  © 2016 WTFPL - http://www.wtfpl.net/
+#### License -  © 2017 WTFPL - http://www.wtfpl.net/
 
 ```
 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
