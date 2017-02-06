@@ -10,6 +10,15 @@ let s:line             = "151515"
 let s:activeline       = "252525"
 let s:non_text         = "151515"
 let s:comment          = "757575"
+let s:window           = "151515"
+let s:tab_bg           = "353535"
+let s:tab_fg           = "bbbbbb"
+let s:linenr_bg        = "151515"
+let s:linenr_fg        = "777777"
+let s:statusline_bg    = "151515"
+let s:statusline_fg    = "90d0f0"
+let s:cursor_bg        = "555555"
+
 let s:red              = "DE575C"
 let s:orange           = "ED934C"
 let s:yellow           = "EBE971"
@@ -20,15 +29,7 @@ let s:aqua             = "4ae5e8"
 let s:olive            = "afaf4f"
 let s:blue             = "7fc6f0"
 let s:lightblue        = "90d0f0"
-let s:purple           = "CF9FFA"
-let s:window           = "151515"
-let s:tab_bg           = "353535"
-let s:tab_fg           = "bbbbbb"
-let s:linenr_bg        = "151515"
-let s:linenr_fg        = "777777"
-let s:statusline_bg    = "151515"
-let s:statusline_fg    = "90d0f0"
-let s:cursor_bg        = "555555"
+let s:purple           = "cf9ffa"
 
 " Console 256 Colours
 if !has("gui_running")
@@ -260,7 +261,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("Search", s:background, s:lightblue, "")
   call <SID>X("TabLine", s:tab_fg, s:tab_bg, "none")
   call <SID>X("TabLineFill", s:tab_bg, s:foreground, "")
-  call <SID>X("TabLineSel", s:tab_fg, s:background, "reverse")
+  call <SID>X("TabLineSel", s:background, s:foreground, "")
   call <SID>X("StatusLine", s:statusline_bg, s:statusline_fg, "")
   call <SID>X("StatusLineNC", s:linenr_fg, s:linenr_bg, "none")
   call <SID>X("VertSplit", s:linenr_bg, s:linenr_bg, "none")
