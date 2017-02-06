@@ -260,7 +260,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("Search", s:background, s:lightblue, "")
   call <SID>X("TabLine", s:tab_fg, s:tab_bg, "none")
   call <SID>X("TabLineFill", s:tab_bg, s:foreground, "")
-  call <SID>X("TabLineSel", s:tab_fg, s:background, "")
+  call <SID>X("TabLineSel", s:tab_fg, s:background, "reverse")
   call <SID>X("StatusLine", s:statusline_bg, s:statusline_fg, "")
   call <SID>X("StatusLineNC", s:linenr_fg, s:linenr_bg, "none")
   call <SID>X("VertSplit", s:linenr_bg, s:linenr_bg, "none")
