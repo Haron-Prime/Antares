@@ -4,8 +4,13 @@ Dark colorscheme for vim/neovim
 
 #### Some screenshots (vim, zsh, haskell)
 
+viml
 ![](/screenshots/1-vim.png?raw=true)
+
+zsh
 ![](/screenshots/2-zsh.png?raw=true)
+
+haskell
 ![](/screenshots/3-haskell.png?raw=true)
 
 
