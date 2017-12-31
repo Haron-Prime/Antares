@@ -14,7 +14,7 @@ haskell
 ![](/screenshots/3-haskell.png?raw=true)
 
 
-#### License -  © 2017 WTFPL - http://www.wtfpl.net/
+### License - [WTFPL](http://www.wtfpl.net/ "WTFPL") 
 
 ```
 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
